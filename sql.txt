@@ -5,6 +5,7 @@ create table sc(sno char(10), cno char(10), grade integer, primary key (sno,cno)
 
 .open demodb
 
+create unique index stusno on student(sno);
 
 insert into student(sno, sname, sage, ssex) values("2012010101","tom",20,"male");
 insert into student(sno, sname, sage, ssex) values("2012010102","jack",21,"male");

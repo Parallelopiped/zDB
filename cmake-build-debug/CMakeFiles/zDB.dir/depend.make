@@ -5,6 +5,7 @@ CMakeFiles/zDB.dir/main.cpp.obj: \
  ../main.cpp \
  ../src/Dictionary.h \
  ../src/Handler.h \
+ ../src/Index.h \
  ../src/Operate.hpp \
  ../src/Table.h \
  ../src/User.hpp \
@@ -17,6 +18,7 @@ CMakeFiles/zDB.dir/src/Create.cpp.obj: \
  ../src/Create.h \
  ../src/DebugToolkit.hpp \
  ../src/Dictionary.h \
+ ../src/Index.h \
  ../src/Operate.hpp \
  ../src/Table.h \
  ../src/User.hpp \
@@ -27,6 +29,7 @@ CMakeFiles/zDB.dir/src/Create.cpp.obj: \
 CMakeFiles/zDB.dir/src/Dictionary.cpp.obj: \
  ../src/Dictionary.cpp \
  ../src/Dictionary.h \
+ ../src/Index.h \
  ../src/Table.h \
  ../src/core/Data.h \
  ../src/core/Exception.h \
@@ -36,6 +39,7 @@ CMakeFiles/zDB.dir/src/Handler.cpp.obj: \
  ../src/Dictionary.h \
  ../src/Handler.cpp \
  ../src/Handler.h \
+ ../src/Index.h \
  ../src/Insert.h \
  ../src/Operate.hpp \
  ../src/Table.h \
@@ -44,9 +48,17 @@ CMakeFiles/zDB.dir/src/Handler.cpp.obj: \
  ../src/core/Exception.h \
  ../src/core/Expression.h \
  ../src/core/Parser.hpp
+CMakeFiles/zDB.dir/src/Index.cpp.obj: \
+ ../src/Index.cpp \
+ ../src/Index.h \
+ ../src/Table.h \
+ ../src/core/Data.h \
+ ../src/core/Exception.h \
+ ../src/core/Expression.h
 CMakeFiles/zDB.dir/src/Insert.cpp.obj: \
  ../src/DebugToolkit.hpp \
  ../src/Dictionary.h \
+ ../src/Index.h \
  ../src/Insert.cpp \
  ../src/Insert.h \
  ../src/Operate.hpp \
@@ -60,6 +72,7 @@ CMakeFiles/zDB.dir/src/Table.cpp.obj: \
  ../src/Table.cpp \
  ../src/Table.h \
  ../src/core/Data.h \
+ ../src/core/Exception.h \
  ../src/core/Expression.h
 CMakeFiles/zDB.dir/src/core/Data.cpp.obj: \
  ../src/core/Data.cpp \

@@ -9,8 +9,8 @@
 #include "core/Parser.hpp"
 #include <utility>
 
-void Insert::BootLoader(User *) {
-    parseInsert(*this);
+void Insert::BootLoader(User* user) {
+    parseInsert(user, *this);
 }
 
 Insert::Insert(std::string account) : Operate(std::move(account)) {}
@@ -34,5 +34,5 @@ void Insert::parseInsert(User* user, Insert &insert) {
 
     //if (user->userDataDictionary)
     Table* table = user->userDataDictionary.findTable(insert.name);
-
+    table->insertTuple(headVec, valueVec);
 }

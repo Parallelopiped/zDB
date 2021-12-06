@@ -1,4 +1,10 @@
+student
+4
 sno,char(10),6 ,
 sname,char(20),9 ,
 sage,integer,12 ,
 ssex,char(10),12 ,
+3
+2012010101,tom,20,male,
+2012010102,jack,21,male,
+2012010103,li,22,male,

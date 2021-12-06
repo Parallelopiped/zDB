@@ -7,6 +7,7 @@
 
 #include "Operate.hpp"
 #include "Table.h"
+#include "Index.h"
 #include <regex>
 #include <iostream>
 
@@ -16,6 +17,7 @@ public:
     void BootLoader(User*) override;
     static int parseCreate(Create& create);
     static Table* parseCreateTable(Create& create);
+    static Index* parseCreateIndex(User*, Create& create);
 
 public:
     explicit Create(std::string account);

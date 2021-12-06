@@ -7,6 +7,8 @@
 
 #include "core/Data.h"
 #include "core/Expression.h"
+#include "core/Exception.h"
+
 #include <vector>
 #include <set>
 #include <string>
@@ -24,7 +26,6 @@ public:
     std::vector<Attributes> head; //表头
     std::string owner;
 
-
     /**
      * 定义元组结构
      */
@@ -32,7 +33,6 @@ public:
         std::vector<std::string> value;
         //union
     };
-
     std::vector<Tuple> data; //表单结构
 
 public:

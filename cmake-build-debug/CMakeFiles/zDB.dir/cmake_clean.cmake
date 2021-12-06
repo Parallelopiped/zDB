@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/zDB.dir/src/Create.cpp.obj"
   "CMakeFiles/zDB.dir/src/Dictionary.cpp.obj"
   "CMakeFiles/zDB.dir/src/Handler.cpp.obj"
+  "CMakeFiles/zDB.dir/src/Index.cpp.obj"
   "CMakeFiles/zDB.dir/src/Insert.cpp.obj"
   "CMakeFiles/zDB.dir/src/Table.cpp.obj"
   "CMakeFiles/zDB.dir/src/core/Data.cpp.obj"

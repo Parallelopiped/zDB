@@ -106,6 +106,12 @@
 		<Unit filename="D:/CLionProjects233/zDB/src/Handler.h">
 			<Option target="zDB"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Index.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Index.h">
+			<Option target="zDB"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Insert.cpp">
 			<Option target="zDB"/>
 		</Unit>

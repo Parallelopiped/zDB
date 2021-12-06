@@ -4,7 +4,6 @@
 
 #include <fstream>
 #include "Table.h"
-#include "core/Exception.h"
 
 //bool Table::CreateTable(const std::string& raw_expression) {
 //
@@ -49,6 +48,8 @@ void Table::saveTableCSV() {
     std::string filepath = "../data/" + name + ".csv";
     std::cout << "table save to " << filepath << std::endl;
     ofile.open(filepath, std::ios::out | std::ios::trunc);//判断.csv文件是否存在，不存在则建立，每次都会删除之前文件，重新生成，不可复写
+    ofile << this->name << std::endl;
+    ofile << this->head.size() << std::endl;
     for (int i = 0; i < this->head.size(); ++i){
         ofile << head[i].headname << "," << head[i].type << ",";
         for (auto & j : head[i].integrity) {
@@ -56,11 +57,21 @@ void Table::saveTableCSV() {
         }
         ofile << "," << head[i].addition << std::endl;
     }
+    ofile << data.size() << std::endl;
+    if (! data.empty()){
+        for (auto & i : data) {
+            std::vector<std::string> tmp = i.value;
+            for (auto & j : tmp) {
+                ofile << j << ",";
+            }
+            ofile << std::endl;
+        }
+    }
     ofile.close();
 }
 
 void Table::insertTuple(const std::vector<std::string>& headname,
-                        const std::vector<std::string>& value    ) {
+                        const std::vector<std::string>& value      ) {
     std::vector<int> col_index; //插入列的顺序
     bool headname_hit = false;
     for (const auto & i : headname) {
@@ -81,9 +92,10 @@ void Table::insertTuple(const std::vector<std::string>& headname,
         newTuple.value.emplace_back(" ");
     }
     for (int i = 0; i < col_index.size(); ++i) {
-        newTuple.value[col_index[i]] = value[i];
+        newTuple.value[col_index[i]] = value[i]; //按head顺序存储插入的数据
     }
     data.push_back(newTuple);
+    this->saveTableCSV();
 }
 
 const std::string &Table::getOwner() const {

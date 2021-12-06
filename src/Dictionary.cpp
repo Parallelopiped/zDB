@@ -6,7 +6,7 @@
 #include "core/Exception.h"
 
 bool Dictionary::addTable(const Table& table) {
-    if (tableDic.find(table.name) == tableDic.end()){
+    if (tableDic.find(table.name) != tableDic.end()){
         Exception::RaiseException(0x00020001);
         return false;
     }
@@ -19,6 +19,15 @@ bool Dictionary::addView(const std::string& view) {
     return true;
 }
 
+bool Dictionary::addIndex(const Index& index) {
+    if (indexDic.find(index.indexName) != indexDic.end()){
+        Exception::RaiseException(0x00030002);
+        return false;
+    }
+    indexDic[index.indexName] = index;
+    return true;
+}
+
 Table *Dictionary::findTable(const std::string& name) {
     if (tableDic.find(name) == tableDic.end()){
         Exception::RaiseException(0x11110001);
@@ -27,6 +36,7 @@ Table *Dictionary::findTable(const std::string& name) {
             Exception::RaiseException(0x00030001);
             return nullptr;
         }
+        return nullptr;
     }
     return &tableDic[name];
 }

@@ -16,14 +16,12 @@
          case TOKEN_TABLE:
              //puts("parseCreateTable");
              user->userDataDictionary.addTable(*parseCreateTable(*this));
-
              break;
          case TOKEN_VIEW:
              user->userDataDictionary.addView(this->account);
-
              break;
          case TOKEN_INDEX:
-
+             user->userDataDictionary.addIndex(*parseCreateIndex(user, *this));
              break;
      }
 }
@@ -37,9 +35,9 @@ Create::Create(std::string account) : Operate(std::move(account)) {}
  */
 int Create::parseCreate(Create &create) {
     puts("parseCreate");
-    std::regex tableP(R"(^(create)\s(table)\s(\w+)\s?)");
+    std::regex tableP(R"(^(create)\s(\w+)\s(\w+)\s?)");
 //    std::regex tableP(R"((^(create)\s(table)\s(\w+)\s?\(\s?((\S+\sinteger)|(\S+\schar\(\w+\)))((\sprimary\skey)|(\snot\snull))?)(\s?,\s?((\S+\sinteger)|(\S+\\schar\(\w+\)))((\sprimary\skey)|(\snot\snull))?)*\);$)");
-    std::regex indexP(R"(^(create)\s(index)\s(\S+)\s(on)\s(\S+)\s(\S+)\s?;$)");
+    //std::regex indexP(R"(^(create)\s(index)\s(\S+)\s(on)\s(\S+)\s(\S+)\s?;$)");
 #ifdef DEBUG_SWITCH
     std::cout << regex_match(create.account, tableP) << std::endl;//true
 #endif
@@ -57,6 +55,12 @@ int Create::parseCreate(Create &create) {
             create.name = m.str(3);
             //create.account = m.suffix().str();
             return TOKEN_TABLE;
+        }
+        else if (m.str(2) == "view"){
+            return TOKEN_VIEW;
+        }
+        else if (m.str(2) == "unique" || m.str(2) == "cluster"){
+            return TOKEN_INDEX;
         }
     }
 
@@ -134,8 +138,25 @@ Table* Create::parseCreateTable(Create &create) {
                        status,
                        "");
     }
-    table->printHead();
+    //table->printHead();
     table->saveTableCSV();
     return table;
+}
+
+Index *Create::parseCreateIndex(User* user, Create& create) {
+    auto* index = new Index();
+    std::regex indexP(R"(^create\s(\w+)\sindex\s(\w+)\son\s(\w+)\((\w+)\))");
+    std::smatch m_index;
+    regex_search(create.account, m_index, indexP);
+#ifdef DEBUG_SWITCH
+    DebugToolkit::RegexSearchOutput(m_index);
+#endif
+    index->indexName = m_index.str(2);
+    index->tableName = m_index.str(3);
+    index->attrbName = m_index.str(4);
+    //
+    index->creatIndex(*user->userDataDictionary.findTable(index->tableName));
+    index->printIndex();
+    return index;
 }
 

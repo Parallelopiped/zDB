@@ -224,6 +224,30 @@ src/Handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Handler.cpp.s
 .PHONY : src/Handler.cpp.s
 
+src/Index.obj: src/Index.cpp.obj
+.PHONY : src/Index.obj
+
+# target to build an object file
+src/Index.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Index.cpp.obj
+.PHONY : src/Index.cpp.obj
+
+src/Index.i: src/Index.cpp.i
+.PHONY : src/Index.i
+
+# target to preprocess a source file
+src/Index.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Index.cpp.i
+.PHONY : src/Index.cpp.i
+
+src/Index.s: src/Index.cpp.s
+.PHONY : src/Index.s
+
+# target to generate assembly for a file
+src/Index.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Index.cpp.s
+.PHONY : src/Index.cpp.s
+
 src/Insert.obj: src/Insert.cpp.obj
 .PHONY : src/Insert.obj
 
@@ -365,6 +389,9 @@ help:
 	@echo ... src/Handler.obj
 	@echo ... src/Handler.i
 	@echo ... src/Handler.s
+	@echo ... src/Index.obj
+	@echo ... src/Index.i
+	@echo ... src/Index.s
 	@echo ... src/Insert.obj
 	@echo ... src/Insert.i
 	@echo ... src/Insert.s
