@@ -19,6 +19,7 @@ public:
 public:
     bool addTable(const Table&);
     bool addView(const std::string&);
+    Table* findTable(const std::string&);
     //static void addTableList();
 public:
 

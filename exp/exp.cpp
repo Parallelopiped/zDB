@@ -14,6 +14,7 @@ int main(){
 //	    file << image_path << "," << label << "," << prediction << "," << probability << "\n";
 //	}
 //	file.close();
+	/*
 	int a[2][3] = { 1,2,3,4,5,6 };
        //方法1
 	ofstream ofile;
@@ -29,5 +30,13 @@ int main(){
 		ofile << "\n";
 	}
 	ofile.close();	
+	*/
+	vector<string> a;
+	a.insert(3, "ahh")
+//	for(int i = 0; i < 5; i++){
+//		a.push_back("");
+//	}	
+	//a[3] = "233";
+	cout << a[3];
 	return 0;
 }

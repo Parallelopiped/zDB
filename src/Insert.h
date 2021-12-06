@@ -10,7 +10,7 @@
 class Insert: public Operate{
 public:
     void BootLoader(User*) override;
-    static void parseInsert(Insert& insert);
+    static void parseInsert(User*, Insert& insert);
 public:
     explicit Insert(std::string account);
 

@@ -4,6 +4,7 @@
 
 #include <fstream>
 #include "Table.h"
+#include "core/Exception.h"
 
 //bool Table::CreateTable(const std::string& raw_expression) {
 //
@@ -56,6 +57,33 @@ void Table::saveTableCSV() {
         ofile << "," << head[i].addition << std::endl;
     }
     ofile.close();
+}
+
+void Table::insertTuple(const std::vector<std::string>& headname,
+                        const std::vector<std::string>& value    ) {
+    std::vector<int> col_index; //插入列的顺序
+    bool headname_hit = false;
+    for (const auto & i : headname) {
+        for (int j = 0; j < head.size(); ++j) {
+            if (i == head[j].headname){
+                col_index.push_back(j);
+                headname_hit = true;
+                break;
+            }
+        }
+        if (! headname_hit){
+            Exception::RaiseException(0x00020002);
+            return;
+        }
+    }
+    Tuple newTuple;
+    for (int i = 0; i < head.size(); ++i) {
+        newTuple.value.emplace_back(" ");
+    }
+    for (int i = 0; i < col_index.size(); ++i) {
+        newTuple.value[col_index[i]] = value[i];
+    }
+    data.push_back(newTuple);
 }
 
 const std::string &Table::getOwner() const {

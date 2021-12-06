@@ -15,7 +15,7 @@ void Insert::BootLoader(User *) {
 
 Insert::Insert(std::string account) : Operate(std::move(account)) {}
 
-void Insert::parseInsert(Insert &insert) {
+void Insert::parseInsert(User* user, Insert &insert) {
     std::regex insertP(R"(^insert\sinto\s(\w+)\((.+)\)\svalues\((.+)\))");
     std::smatch m_insert;
     bool found = regex_search(insert.account, m_insert, insertP);
@@ -31,5 +31,8 @@ void Insert::parseInsert(Insert &insert) {
     std::vector<std::string> headVec, valueVec;
     headVec = Parser::regexSplit(headStr, ",\\s?");
     valueVec = Parser::regexSplit(valueStr, ",");
+
+    //if (user->userDataDictionary)
+    Table* table = user->userDataDictionary.findTable(insert.name);
 
 }

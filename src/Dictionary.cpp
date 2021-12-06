@@ -18,3 +18,15 @@ bool Dictionary::addView(const std::string& view) {
     this->viewDic.push_back(view);
     return true;
 }
+
+Table *Dictionary::findTable(const std::string& name) {
+    if (tableDic.find(name) == tableDic.end()){
+        Exception::RaiseException(0x11110001);
+        //
+        if (0){
+            Exception::RaiseException(0x00030001);
+            return nullptr;
+        }
+    }
+    return &tableDic[name];
+}
