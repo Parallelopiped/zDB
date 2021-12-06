@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="zDB"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/CLionProjects233/zDB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zDB">
+				<Option output="D:/CLionProjects233/zDB/cmake-build-debug/zDB.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CLionProjects233/zDB/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include/c++/10.2.0/i686-w64-mingw32"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/include"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/include-fixed"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 zDB"/>
+					<CompileFile command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="zDB/fast">
+				<Option output="D:/CLionProjects233/zDB/cmake-build-debug/zDB.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CLionProjects233/zDB/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include/c++/10.2.0/i686-w64-mingw32"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/include"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../include"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/include-fixed"/>
+					<Add directory="F:/MinGW32/bin/../lib/gcc/i686-w64-mingw32/10.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 zDB/fast"/>
+					<CompileFile command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/CLionProjects233/zDB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/CLionProjects233/zDB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW32/bin/mingw32-make.exe -f &quot;D:/CLionProjects233/zDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/CLionProjects233/zDB/main.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Create.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Create.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/DebugToolkit.hpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Dictionary.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Dictionary.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Handler.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Handler.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Insert.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Insert.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Operate.hpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Table.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Table.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/User.hpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/core/Data.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/core/Data.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/core/Exception.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/core/Exception.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/core/Expression.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/core/Expression.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/core/Parser.hpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

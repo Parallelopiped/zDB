@@ -1,0 +1,3 @@
+D:/CLionProjects233/zDB/cmake-build-debug/CMakeFiles/zDB.dir
+D:/CLionProjects233/zDB/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CLionProjects233/zDB/cmake-build-debug/CMakeFiles/rebuild_cache.dir

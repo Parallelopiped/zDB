@@ -1,0 +1,4 @@
+sno,char(10),6 ,
+sname,char(20),9 ,
+sage,integer,12 ,
+ssex,char(10),12 ,

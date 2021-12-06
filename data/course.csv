@@ -1,0 +1,3 @@
+cno,char(10),6 ,
+cname,char(20),8 ,
+credit,integer,12 ,
