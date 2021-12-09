@@ -74,6 +74,8 @@ typedef enum Token_{
     TOKEN_CREATE = 0,
     TOKEN_INSERT,
     TOKEN_SELECT,
+    TOKEN_UPDATE,
+    TOKEN_DELETE,
 
     TOKEN_TABLE,
     TOKEN_INDEX,
@@ -97,6 +99,8 @@ static EnumHelper<Token> DataStatusHelper(
         { {TOKEN_CREATE, "create"},
           {TOKEN_INSERT, "insert"},
           {TOKEN_SELECT, "select"},
+          {TOKEN_UPDATE, "update"},
+          {TOKEN_DELETE, "delete"},
 
           {TOKEN_TABLE, "table"},
           {TOKEN_INDEX, "index"},

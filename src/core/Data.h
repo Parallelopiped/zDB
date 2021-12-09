@@ -12,7 +12,6 @@ typedef struct Node_{
     Node_ *right{}, *down{};
     //int col_num;
     std::string data;
-
 } Node;
 
 class Data {

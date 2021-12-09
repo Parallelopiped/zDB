@@ -9,6 +9,7 @@
 #include <map>
 #include <string>
 #include "Table.h"
+#include "View.h"
 #include "Index.h"
 //#include "User.hpp"
 
@@ -24,6 +25,11 @@ public:
     bool addView(const std::string&);
     bool addIndex(const Index&);
     Table* findTable(const std::string&);
+    View* findView(const std::string&);
+    Index* findIndex(const std::string&);
+
+    void saveAuthority();
+    void printDic();
     //static void addTableList();
 public:
 

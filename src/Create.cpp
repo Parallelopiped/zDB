@@ -15,7 +15,7 @@
      switch (ope) {
          case TOKEN_TABLE:
              //puts("parseCreateTable");
-             user->userDataDictionary.addTable(*parseCreateTable(*this));
+             user->userDataDictionary.addTable(*parseCreateTable(user, *this));
              break;
          case TOKEN_VIEW:
              user->userDataDictionary.addView(this->account);
@@ -72,7 +72,7 @@ int Create::parseCreate(Create &create) {
  * @param create
  * @return
  */
-Table* Create::parseCreateTable(Create &create) {
+Table* Create::parseCreateTable(User* user, Create &create) {
     auto* table = new Table();
     table->setName(create.name);
     //std::regex tableP(R"(\(\s?(((\S+)\s(integer))|((\S+)\s(char\(\w+\)))))");
@@ -139,6 +139,7 @@ Table* Create::parseCreateTable(Create &create) {
                        "");
     }
     //table->printHead();
+    table->setOwner(user->userName);
     table->saveTableCSV();
     return table;
 }

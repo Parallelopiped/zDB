@@ -8,12 +8,14 @@
 #include "Table.h"
 #include <string>
 #include <map>
+#include "SplayIndex.hpp"
 #include <ext/pb_ds/tree_policy.hpp>
 
 using namespace __gnu_pbds;
 
 class Index {
 public:
+    Splay splayIndex;
     std::string indexName;
     std::string tableName;
     std::string attrbName;
@@ -22,6 +24,7 @@ public:
 public:
     void printIndex() const;
     void creatIndex(const Table&);
+    void saveIndex() const;
 };
 
 

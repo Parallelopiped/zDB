@@ -18,9 +18,10 @@ void Table::addHead(const std::string& headname, const std::string& type, Token 
     head.push_back(attributes);
 }
 
-void Table::printHead() {
+void Table::printTable() {
     for (int i = 0; i < this->head.size(); ++i) {
-        std::cout << "***Table " << name << std::endl;
+        std::cout << "Table: " << name << std::endl;
+        std::cout << owner << std::endl;
         std::cout << "name:" << head[i].headname << " type:" << head[i].type
         << " integ:";
         for (auto & j : head[i].integrity) {
@@ -45,10 +46,11 @@ void Table::setKey(const std::vector<std::string>& key, Token integrity, const s
 
 void Table::saveTableCSV() {
     std::ofstream ofile;
-    std::string filepath = "../data/" + name + ".csv";
+    std::string filepath = "../data/table_" + name + ".csv";
     std::cout << "table save to " << filepath << std::endl;
     ofile.open(filepath, std::ios::out | std::ios::trunc);//判断.csv文件是否存在，不存在则建立，每次都会删除之前文件，重新生成，不可复写
     ofile << this->name << std::endl;
+    ofile << this->owner << std::endl;
     ofile << this->head.size() << std::endl;
     for (int i = 0; i < this->head.size(); ++i){
         ofile << head[i].headname << "," << head[i].type << ",";

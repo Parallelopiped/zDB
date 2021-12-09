@@ -26,9 +26,9 @@ Table* Where::parseWhere() {
     for (auto & i : tableName) {
         usedTable.push_back(user->userDataDictionary.findTable(i));
     }
-    std::regex whereP(R"((in))");
+    std::regex where_inP(R"((in))");
     std::smatch m_where;
-    bool found_in = regex_search(account, m_where, whereP);
+    bool found_in = regex_search(account, m_where, where_inP);
 #ifdef DEBUG_SWITCH
     std::cout << "in: " << found_in << std::endl;
     DebugToolkit::RegexSearchOutput(m_where);
@@ -41,6 +41,9 @@ Table* Where::parseWhere() {
         returnTable = *Select::parseSelect(user, * new Select(innerAccount)); //实现嵌套查询
         return &returnTable;
     }
+    //解析where内的具体内容，省略字符串解析部分
+    std::regex whereP(R"((and)|(or)|(between and)|(like))");
+
     ;
     return nullptr;
 }

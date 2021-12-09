@@ -7,8 +7,10 @@ CMakeFiles/zDB.dir/main.cpp.obj
  D:/CLionProjects233/zDB/src/Handler.h
  D:/CLionProjects233/zDB/src/Index.h
  D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
@@ -20,8 +22,24 @@ CMakeFiles/zDB.dir/src/Create.cpp.obj
  D:/CLionProjects233/zDB/src/Dictionary.h
  D:/CLionProjects233/zDB/src/Index.h
  D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
+ D:/CLionProjects233/zDB/src/core/Data.h
+ D:/CLionProjects233/zDB/src/core/Exception.h
+ D:/CLionProjects233/zDB/src/core/Expression.h
+ D:/CLionProjects233/zDB/src/core/Parser.hpp
+CMakeFiles/zDB.dir/src/Delete.cpp.obj
+ D:/CLionProjects233/zDB/src/Delete.cpp
+ D:/CLionProjects233/zDB/src/Delete.h
+ D:/CLionProjects233/zDB/src/Dictionary.h
+ D:/CLionProjects233/zDB/src/Index.h
+ D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
+ D:/CLionProjects233/zDB/src/Table.h
+ D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
@@ -30,12 +48,15 @@ CMakeFiles/zDB.dir/src/Dictionary.cpp.obj
  D:/CLionProjects233/zDB/src/Dictionary.cpp
  D:/CLionProjects233/zDB/src/Dictionary.h
  D:/CLionProjects233/zDB/src/Index.h
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
+ D:/CLionProjects233/zDB/src/View.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
 CMakeFiles/zDB.dir/src/Handler.cpp.obj
  D:/CLionProjects233/zDB/src/Create.h
+ D:/CLionProjects233/zDB/src/Delete.h
  D:/CLionProjects233/zDB/src/Dictionary.h
  D:/CLionProjects233/zDB/src/Handler.cpp
  D:/CLionProjects233/zDB/src/Handler.h
@@ -43,8 +64,11 @@ CMakeFiles/zDB.dir/src/Handler.cpp.obj
  D:/CLionProjects233/zDB/src/Insert.h
  D:/CLionProjects233/zDB/src/Operate.hpp
  D:/CLionProjects233/zDB/src/Select.h
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
+ D:/CLionProjects233/zDB/src/Update.h
  D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
@@ -52,6 +76,7 @@ CMakeFiles/zDB.dir/src/Handler.cpp.obj
 CMakeFiles/zDB.dir/src/Index.cpp.obj
  D:/CLionProjects233/zDB/src/Index.cpp
  D:/CLionProjects233/zDB/src/Index.h
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
@@ -63,8 +88,10 @@ CMakeFiles/zDB.dir/src/Insert.cpp.obj
  D:/CLionProjects233/zDB/src/Insert.cpp
  D:/CLionProjects233/zDB/src/Insert.h
  D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
@@ -76,8 +103,10 @@ CMakeFiles/zDB.dir/src/Select.cpp.obj
  D:/CLionProjects233/zDB/src/Operate.hpp
  D:/CLionProjects233/zDB/src/Select.cpp
  D:/CLionProjects233/zDB/src/Select.h
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
  D:/CLionProjects233/zDB/src/Where.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
@@ -89,14 +118,38 @@ CMakeFiles/zDB.dir/src/Table.cpp.obj
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
+CMakeFiles/zDB.dir/src/Update.cpp.obj
+ D:/CLionProjects233/zDB/src/DebugToolkit.hpp
+ D:/CLionProjects233/zDB/src/Dictionary.h
+ D:/CLionProjects233/zDB/src/Index.h
+ D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
+ D:/CLionProjects233/zDB/src/Table.h
+ D:/CLionProjects233/zDB/src/Update.cpp
+ D:/CLionProjects233/zDB/src/Update.h
+ D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
+ D:/CLionProjects233/zDB/src/Where.h
+ D:/CLionProjects233/zDB/src/core/Data.h
+ D:/CLionProjects233/zDB/src/core/Exception.h
+ D:/CLionProjects233/zDB/src/core/Expression.h
+ D:/CLionProjects233/zDB/src/core/Parser.hpp
+CMakeFiles/zDB.dir/src/View.cpp.obj
+ D:/CLionProjects233/zDB/src/View.cpp
+ D:/CLionProjects233/zDB/src/View.h
+ D:/CLionProjects233/zDB/src/core/Data.h
+ D:/CLionProjects233/zDB/src/core/Exception.h
+ D:/CLionProjects233/zDB/src/core/Expression.h
 CMakeFiles/zDB.dir/src/Where.cpp.obj
  D:/CLionProjects233/zDB/src/DebugToolkit.hpp
  D:/CLionProjects233/zDB/src/Dictionary.h
  D:/CLionProjects233/zDB/src/Index.h
  D:/CLionProjects233/zDB/src/Operate.hpp
  D:/CLionProjects233/zDB/src/Select.h
+ D:/CLionProjects233/zDB/src/SplayIndex.hpp
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/View.h
  D:/CLionProjects233/zDB/src/Where.cpp
  D:/CLionProjects233/zDB/src/Where.h
  D:/CLionProjects233/zDB/src/core/Data.h

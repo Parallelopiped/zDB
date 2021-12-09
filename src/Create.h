@@ -16,7 +16,7 @@ class Create: public Operate{
 public:
     void BootLoader(User*) override;
     static int parseCreate(Create& create);
-    static Table* parseCreateTable(Create& create);
+    static Table* parseCreateTable(User*, Create& create);
     static Index* parseCreateIndex(User*, Create& create);
 
 public:

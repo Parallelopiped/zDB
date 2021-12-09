@@ -94,6 +94,12 @@
 		<Unit filename="D:/CLionProjects233/zDB/src/DebugToolkit.hpp">
 			<Option target="zDB"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Delete.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Delete.h">
+			<Option target="zDB"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Dictionary.cpp">
 			<Option target="zDB"/>
 		</Unit>
@@ -104,6 +110,9 @@
 			<Option target="zDB"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Handler.h">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Help.hpp">
 			<Option target="zDB"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Index.cpp">
@@ -127,13 +136,28 @@
 		<Unit filename="D:/CLionProjects233/zDB/src/Select.h">
 			<Option target="zDB"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/SplayIndex.hpp">
+			<Option target="zDB"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Table.cpp">
 			<Option target="zDB"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Table.h">
 			<Option target="zDB"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Update.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Update.h">
+			<Option target="zDB"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/User.hpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/View.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/View.h">
 			<Option target="zDB"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Where.cpp">

@@ -176,6 +176,30 @@ src/Create.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Create.cpp.s
 .PHONY : src/Create.cpp.s
 
+src/Delete.obj: src/Delete.cpp.obj
+.PHONY : src/Delete.obj
+
+# target to build an object file
+src/Delete.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Delete.cpp.obj
+.PHONY : src/Delete.cpp.obj
+
+src/Delete.i: src/Delete.cpp.i
+.PHONY : src/Delete.i
+
+# target to preprocess a source file
+src/Delete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Delete.cpp.i
+.PHONY : src/Delete.cpp.i
+
+src/Delete.s: src/Delete.cpp.s
+.PHONY : src/Delete.s
+
+# target to generate assembly for a file
+src/Delete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Delete.cpp.s
+.PHONY : src/Delete.cpp.s
+
 src/Dictionary.obj: src/Dictionary.cpp.obj
 .PHONY : src/Dictionary.obj
 
@@ -320,6 +344,54 @@ src/Table.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Table.cpp.s
 .PHONY : src/Table.cpp.s
 
+src/Update.obj: src/Update.cpp.obj
+.PHONY : src/Update.obj
+
+# target to build an object file
+src/Update.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Update.cpp.obj
+.PHONY : src/Update.cpp.obj
+
+src/Update.i: src/Update.cpp.i
+.PHONY : src/Update.i
+
+# target to preprocess a source file
+src/Update.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Update.cpp.i
+.PHONY : src/Update.cpp.i
+
+src/Update.s: src/Update.cpp.s
+.PHONY : src/Update.s
+
+# target to generate assembly for a file
+src/Update.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Update.cpp.s
+.PHONY : src/Update.cpp.s
+
+src/View.obj: src/View.cpp.obj
+.PHONY : src/View.obj
+
+# target to build an object file
+src/View.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/View.cpp.obj
+.PHONY : src/View.cpp.obj
+
+src/View.i: src/View.cpp.i
+.PHONY : src/View.i
+
+# target to preprocess a source file
+src/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/View.cpp.i
+.PHONY : src/View.cpp.i
+
+src/View.s: src/View.cpp.s
+.PHONY : src/View.s
+
+# target to generate assembly for a file
+src/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/View.cpp.s
+.PHONY : src/View.cpp.s
+
 src/Where.obj: src/Where.cpp.obj
 .PHONY : src/Where.obj
 
@@ -431,6 +503,9 @@ help:
 	@echo ... src/Create.obj
 	@echo ... src/Create.i
 	@echo ... src/Create.s
+	@echo ... src/Delete.obj
+	@echo ... src/Delete.i
+	@echo ... src/Delete.s
 	@echo ... src/Dictionary.obj
 	@echo ... src/Dictionary.i
 	@echo ... src/Dictionary.s
@@ -449,6 +524,12 @@ help:
 	@echo ... src/Table.obj
 	@echo ... src/Table.i
 	@echo ... src/Table.s
+	@echo ... src/Update.obj
+	@echo ... src/Update.i
+	@echo ... src/Update.s
+	@echo ... src/View.obj
+	@echo ... src/View.i
+	@echo ... src/View.s
 	@echo ... src/Where.obj
 	@echo ... src/Where.i
 	@echo ... src/Where.s

@@ -1,7 +1,8 @@
-﻿//
+//
 // Created by NaturalVStudio on 2021/12/4.
 //
 
+#include <fstream>
 #include "Dictionary.h"
 #include "core/Exception.h"
 
@@ -39,4 +40,43 @@ Table *Dictionary::findTable(const std::string& name) {
         return nullptr;
     }
     return &tableDic[name];
+}
+
+void Dictionary::saveAuthority() {
+    std::ofstream ofile;
+    std::string filepath = "../data/authority_" + owner + ".csv";
+    std::cout << "authority save to " << filepath << std::endl;
+    ofile.open(filepath, std::ios::out | std::ios::trunc);
+    ofile << owner << std::endl;
+    auto it = tableDic.begin();
+    for (it = tableDic.begin(); it != tableDic.end(); it++){
+        ofile << (it->first) << "," << "777" << std::endl;
+    }
+    ofile.close();
+}
+
+void Dictionary::printDic() {
+    puts("database:\n-------");
+    puts("table:");
+    auto it = tableDic.begin();
+    for (it = tableDic.begin(); it != tableDic.end(); it++){
+        std::cout << (it->first) << std::endl;
+    }
+    puts("view:");
+    for (auto & i : viewDic) {
+        std::cout << i << std::endl;
+    }
+    puts("index:");
+    it = tableDic.begin();
+    for (it = tableDic.begin(); it != tableDic.end(); it++){
+        std::cout << (it->first) << std::endl;
+    }
+}
+
+View *Dictionary::findView(const string &) {
+    return nullptr;
+}
+
+Index *Dictionary::findIndex(const string &) {
+    return nullptr;
 }

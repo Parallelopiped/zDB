@@ -1,4 +1,4 @@
-ï»¿//
+//
 // Created by NaturalVStudio on 2021/12/5.
 //
 
@@ -7,14 +7,35 @@
 
 #include "Dictionary.h"
 #include <string>
+#include <fstream>
 
 class User {
 public:
     std::string userName;
     Dictionary userDataDictionary;
 public:
-    User(const std::string& username){
+    explicit User(const std::string& username){
         userName = username.empty() ? "ahh" : username;
+        userDataDictionary.owner = username;
+    }
+
+    void saveUser() const{
+        std::ifstream ifile;
+        std::string filepath = "../data/userlist.csv";
+        ifile.open(filepath, std::ios::in); //ËùÓĞÊä³ö¶¼Ìí¼ÓÔÚÎÄ¼şÄ©Î²£¬¿É¸´Ğ´
+        std::string name;
+        while (std::getline(ifile, name)){
+            if (name == userName){
+                std::cout << "µÇÂ¼³É¹¦!" << std::endl;
+                return;
+            }
+        }
+
+        std::ofstream ofile;
+        std::cout << "user save to " << filepath << std::endl;
+        ofile.open(filepath, std::ios::out | std::ios::app); //ËùÓĞÊä³ö¶¼Ìí¼ÓÔÚÎÄ¼şÄ©Î²£¬¿É¸´Ğ´
+        ofile << userName << std::endl;
+        ofile.close();
     }
 };
 

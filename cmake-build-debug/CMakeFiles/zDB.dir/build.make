@@ -221,6 +221,45 @@ CMakeFiles/zDB.dir/src/Where.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zDB.dir/src/Where.cpp.s"
 	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects233\zDB\src\Where.cpp -o CMakeFiles\zDB.dir\src\Where.cpp.s
 
+CMakeFiles/zDB.dir/src/Delete.cpp.obj: CMakeFiles/zDB.dir/flags.make
+CMakeFiles/zDB.dir/src/Delete.cpp.obj: ../src/Delete.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects233\zDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/zDB.dir/src/Delete.cpp.obj"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\zDB.dir\src\Delete.cpp.obj -c D:\CLionProjects233\zDB\src\Delete.cpp
+
+CMakeFiles/zDB.dir/src/Delete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zDB.dir/src/Delete.cpp.i"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects233\zDB\src\Delete.cpp > CMakeFiles\zDB.dir\src\Delete.cpp.i
+
+CMakeFiles/zDB.dir/src/Delete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zDB.dir/src/Delete.cpp.s"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects233\zDB\src\Delete.cpp -o CMakeFiles\zDB.dir\src\Delete.cpp.s
+
+CMakeFiles/zDB.dir/src/Update.cpp.obj: CMakeFiles/zDB.dir/flags.make
+CMakeFiles/zDB.dir/src/Update.cpp.obj: ../src/Update.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects233\zDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/zDB.dir/src/Update.cpp.obj"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\zDB.dir\src\Update.cpp.obj -c D:\CLionProjects233\zDB\src\Update.cpp
+
+CMakeFiles/zDB.dir/src/Update.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zDB.dir/src/Update.cpp.i"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects233\zDB\src\Update.cpp > CMakeFiles\zDB.dir\src\Update.cpp.i
+
+CMakeFiles/zDB.dir/src/Update.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zDB.dir/src/Update.cpp.s"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects233\zDB\src\Update.cpp -o CMakeFiles\zDB.dir\src\Update.cpp.s
+
+CMakeFiles/zDB.dir/src/View.cpp.obj: CMakeFiles/zDB.dir/flags.make
+CMakeFiles/zDB.dir/src/View.cpp.obj: ../src/View.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects233\zDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/zDB.dir/src/View.cpp.obj"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\zDB.dir\src\View.cpp.obj -c D:\CLionProjects233\zDB\src\View.cpp
+
+CMakeFiles/zDB.dir/src/View.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/zDB.dir/src/View.cpp.i"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects233\zDB\src\View.cpp > CMakeFiles\zDB.dir\src\View.cpp.i
+
+CMakeFiles/zDB.dir/src/View.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/zDB.dir/src/View.cpp.s"
+	F:\MinGW32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects233\zDB\src\View.cpp -o CMakeFiles\zDB.dir\src\View.cpp.s
+
 # Object files for target zDB
 zDB_OBJECTS = \
 "CMakeFiles/zDB.dir/main.cpp.obj" \
@@ -234,7 +273,10 @@ zDB_OBJECTS = \
 "CMakeFiles/zDB.dir/src/Insert.cpp.obj" \
 "CMakeFiles/zDB.dir/src/Index.cpp.obj" \
 "CMakeFiles/zDB.dir/src/Select.cpp.obj" \
-"CMakeFiles/zDB.dir/src/Where.cpp.obj"
+"CMakeFiles/zDB.dir/src/Where.cpp.obj" \
+"CMakeFiles/zDB.dir/src/Delete.cpp.obj" \
+"CMakeFiles/zDB.dir/src/Update.cpp.obj" \
+"CMakeFiles/zDB.dir/src/View.cpp.obj"
 
 # External object files for target zDB
 zDB_EXTERNAL_OBJECTS =
@@ -251,11 +293,14 @@ zDB.exe: CMakeFiles/zDB.dir/src/Insert.cpp.obj
 zDB.exe: CMakeFiles/zDB.dir/src/Index.cpp.obj
 zDB.exe: CMakeFiles/zDB.dir/src/Select.cpp.obj
 zDB.exe: CMakeFiles/zDB.dir/src/Where.cpp.obj
+zDB.exe: CMakeFiles/zDB.dir/src/Delete.cpp.obj
+zDB.exe: CMakeFiles/zDB.dir/src/Update.cpp.obj
+zDB.exe: CMakeFiles/zDB.dir/src/View.cpp.obj
 zDB.exe: CMakeFiles/zDB.dir/build.make
 zDB.exe: CMakeFiles/zDB.dir/linklibs.rsp
 zDB.exe: CMakeFiles/zDB.dir/objects1.rsp
 zDB.exe: CMakeFiles/zDB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects233\zDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable zDB.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects233\zDB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable zDB.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\zDB.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

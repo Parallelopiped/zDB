@@ -44,7 +44,7 @@ public:
     void addHead(const std::string& headname, const std::string& type, Token integrity, const std::string& addition);
     void setKey(const std::vector<std::string>& key, Token, const std::string& addition);
     void insertTuple(const std::vector<std::string>&, const std::vector<std::string>&);
-    void printHead();
+    void printTable();
     void saveTableCSV();
 };
 

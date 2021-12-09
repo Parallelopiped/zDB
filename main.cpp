@@ -15,6 +15,7 @@ int main(){
     getline(cin, username);
     User* heyGuy = new User(username);
     std::cout << heyGuy->userName << ": »¶Ó­" << endl;
+    heyGuy->saveUser();
 
     string handler;
     vector<Handler*> HandlerList;

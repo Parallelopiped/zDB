@@ -9,12 +9,13 @@
 #include "Create.h"
 #include "Insert.h"
 #include "Select.h"
+#include "Update.h"
+#include "Delete.h"
 
 //using namespace  std;
 
 Handler::Handler(const std::string& account, User* user) {
     std::regex r("\\s");
-    //std::cout << account << std::endl;
     std::smatch m;
     bool found = regex_search(account, m, r);
     if(found){
@@ -33,9 +34,11 @@ Handler::Handler(const std::string& account, User* user) {
             case TOKEN_SELECT:
                 this->operate = new Select(account);
                 break;
-            case TOKEN_L_PARENTHESIS:
+            case TOKEN_UPDATE:
+                this->operate = new Update(account);
                 break;
-            case TOKEN_R_PARENTHESIS:
+            case TOKEN_DELETE:
+                this->operate = new Delete(account);
                 break;
             default:
                 Exception::RaiseException(0x00010002);
@@ -43,15 +46,8 @@ Handler::Handler(const std::string& account, User* user) {
         }
         this->operate->BootLoader(user); //sqlÓï¾ä½âÎöÒıµ¼
 
-//        cout << "m.size() " << m.size() << endl;
-//        for(int i=0; i<m.size(); ++i){
-//            cout << "m.str(" << i << "): " << m.str(i) << endl;
-//        }
-//        cout << "m.prefix().str(): " << m.prefix().str() << endl;
-//        cout << "m.suffix().str(): " << m.suffix().str() << endl;
     }
     else Exception::RaiseException(0x00010001);
-
 
 }
 
