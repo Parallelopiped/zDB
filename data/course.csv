@@ -1,3 +1,6 @@
+course
+3
 cno,char(10),6 ,
 cname,char(20),8 ,
 credit,integer,12 ,
+0

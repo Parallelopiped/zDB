@@ -8,6 +8,7 @@
 #include "core/Exception.h"
 #include "Create.h"
 #include "Insert.h"
+#include "Select.h"
 
 //using namespace  std;
 
@@ -30,6 +31,7 @@ Handler::Handler(const std::string& account, User* user) {
                 this->operate = new Insert(account);
                 break;
             case TOKEN_SELECT:
+                this->operate = new Select(account);
                 break;
             case TOKEN_L_PARENTHESIS:
                 break;

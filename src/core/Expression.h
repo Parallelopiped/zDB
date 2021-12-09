@@ -9,6 +9,8 @@
 #include <map>
 #include <iostream>
 
+#define DEBUG_OPTION
+
 template <typename T>
     class EnumHelper {
     private:
@@ -40,7 +42,9 @@ template <typename T>
 
             auto find = _mapString2Enum.find(str);
             if (find == _mapString2Enum.end()) {
+#ifdef DEBUG_OPTION
                 std::cout << "无法解析 \"" << str << "\" 为已知的SQL语句类型，语句表：" << typeid(T).name() << std::endl;
+#endif
                 return _defaultValue;
             } else {
                 return find->second;

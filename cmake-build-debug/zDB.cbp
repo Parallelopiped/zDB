@@ -121,6 +121,12 @@
 		<Unit filename="D:/CLionProjects233/zDB/src/Operate.hpp">
 			<Option target="zDB"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Select.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Select.h">
+			<Option target="zDB"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/Table.cpp">
 			<Option target="zDB"/>
 		</Unit>
@@ -128,6 +134,12 @@
 			<Option target="zDB"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/User.hpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Where.cpp">
+			<Option target="zDB"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects233/zDB/src/Where.h">
 			<Option target="zDB"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects233/zDB/src/core/Data.cpp">

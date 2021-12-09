@@ -42,6 +42,7 @@ CMakeFiles/zDB.dir/src/Handler.cpp.obj: \
  ../src/Index.h \
  ../src/Insert.h \
  ../src/Operate.hpp \
+ ../src/Select.h \
  ../src/Table.h \
  ../src/User.hpp \
  ../src/core/Data.h \
@@ -68,12 +69,40 @@ CMakeFiles/zDB.dir/src/Insert.cpp.obj: \
  ../src/core/Exception.h \
  ../src/core/Expression.h \
  ../src/core/Parser.hpp
+CMakeFiles/zDB.dir/src/Select.cpp.obj: \
+ ../src/DebugToolkit.hpp \
+ ../src/Dictionary.h \
+ ../src/Index.h \
+ ../src/Operate.hpp \
+ ../src/Select.cpp \
+ ../src/Select.h \
+ ../src/Table.h \
+ ../src/User.hpp \
+ ../src/Where.h \
+ ../src/core/Data.h \
+ ../src/core/Exception.h \
+ ../src/core/Expression.h \
+ ../src/core/Parser.hpp
 CMakeFiles/zDB.dir/src/Table.cpp.obj: \
  ../src/Table.cpp \
  ../src/Table.h \
  ../src/core/Data.h \
  ../src/core/Exception.h \
  ../src/core/Expression.h
+CMakeFiles/zDB.dir/src/Where.cpp.obj: \
+ ../src/DebugToolkit.hpp \
+ ../src/Dictionary.h \
+ ../src/Index.h \
+ ../src/Operate.hpp \
+ ../src/Select.h \
+ ../src/Table.h \
+ ../src/User.hpp \
+ ../src/Where.cpp \
+ ../src/Where.h \
+ ../src/core/Data.h \
+ ../src/core/Exception.h \
+ ../src/core/Expression.h \
+ ../src/core/Parser.hpp
 CMakeFiles/zDB.dir/src/core/Data.cpp.obj: \
  ../src/core/Data.cpp \
  ../src/core/Data.h

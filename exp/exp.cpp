@@ -32,11 +32,10 @@ int main(){
 	ofile.close();	
 	*/
 	vector<string> a;
-	a.insert(3, "ahh")
-//	for(int i = 0; i < 5; i++){
-//		a.push_back("");
-//	}	
-	//a[3] = "233";
+	for(int i = 0; i < 5; i++){
+		a.push_back("");
+	}	
+	a[3] = "233";
 	cout << a[3];
 	return 0;
 }

@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-D:/CLionProjects233/zDB/src/Create.cpp
-Create.h
-D:/CLionProjects233/zDB/src/Create.h
-core/Exception.h
-D:/CLionProjects233/zDB/src/core/Exception.h
-core/Expression.h
-D:/CLionProjects233/zDB/src/core/Expression.h
-core/Parser.hpp
-D:/CLionProjects233/zDB/src/core/Parser.hpp
-DebugToolkit.hpp
-D:/CLionProjects233/zDB/src/DebugToolkit.hpp
-
-D:/CLionProjects233/zDB/src/Create.h
-Operate.hpp
-D:/CLionProjects233/zDB/src/Operate.hpp
-Table.h
-D:/CLionProjects233/zDB/src/Table.h
-Index.h
-D:/CLionProjects233/zDB/src/Index.h
-regex
--
-iostream
--
-
 D:/CLionProjects233/zDB/src/DebugToolkit.hpp
 regex
 -
@@ -70,6 +46,12 @@ D:/CLionProjects233/zDB/src/core/Parser.hpp
 User.hpp
 D:/CLionProjects233/zDB/src/User.hpp
 
+D:/CLionProjects233/zDB/src/Select.h
+Operate.hpp
+D:/CLionProjects233/zDB/src/Operate.hpp
+User.hpp
+D:/CLionProjects233/zDB/src/User.hpp
+
 D:/CLionProjects233/zDB/src/Table.h
 core/Data.h
 D:/CLionProjects233/zDB/src/core/Data.h
@@ -89,6 +71,24 @@ Dictionary.h
 D:/CLionProjects233/zDB/src/Dictionary.h
 string
 -
+
+D:/CLionProjects233/zDB/src/Where.cpp
+regex
+-
+Where.h
+D:/CLionProjects233/zDB/src/Where.h
+Select.h
+D:/CLionProjects233/zDB/src/Select.h
+core/Parser.hpp
+D:/CLionProjects233/zDB/src/core/Parser.hpp
+DebugToolkit.hpp
+D:/CLionProjects233/zDB/src/DebugToolkit.hpp
+
+D:/CLionProjects233/zDB/src/Where.h
+Table.h
+D:/CLionProjects233/zDB/src/Table.h
+User.hpp
+D:/CLionProjects233/zDB/src/User.hpp
 
 D:/CLionProjects233/zDB/src/core/Data.h
 string

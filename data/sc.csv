@@ -1,3 +1,8 @@
+sc
+3
 sno,char(10),12 6 7 ,student sno
 cno,char(10),12 6 7 ,student cno
 grade,integer,12 ,
+2
+2012010101,c001,80,
+2012010102,c001,45,

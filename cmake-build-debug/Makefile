@@ -272,6 +272,30 @@ src/Insert.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Insert.cpp.s
 .PHONY : src/Insert.cpp.s
 
+src/Select.obj: src/Select.cpp.obj
+.PHONY : src/Select.obj
+
+# target to build an object file
+src/Select.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Select.cpp.obj
+.PHONY : src/Select.cpp.obj
+
+src/Select.i: src/Select.cpp.i
+.PHONY : src/Select.i
+
+# target to preprocess a source file
+src/Select.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Select.cpp.i
+.PHONY : src/Select.cpp.i
+
+src/Select.s: src/Select.cpp.s
+.PHONY : src/Select.s
+
+# target to generate assembly for a file
+src/Select.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Select.cpp.s
+.PHONY : src/Select.cpp.s
+
 src/Table.obj: src/Table.cpp.obj
 .PHONY : src/Table.obj
 
@@ -295,6 +319,30 @@ src/Table.s: src/Table.cpp.s
 src/Table.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Table.cpp.s
 .PHONY : src/Table.cpp.s
+
+src/Where.obj: src/Where.cpp.obj
+.PHONY : src/Where.obj
+
+# target to build an object file
+src/Where.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Where.cpp.obj
+.PHONY : src/Where.cpp.obj
+
+src/Where.i: src/Where.cpp.i
+.PHONY : src/Where.i
+
+# target to preprocess a source file
+src/Where.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Where.cpp.i
+.PHONY : src/Where.cpp.i
+
+src/Where.s: src/Where.cpp.s
+.PHONY : src/Where.s
+
+# target to generate assembly for a file
+src/Where.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\zDB.dir\build.make CMakeFiles/zDB.dir/src/Where.cpp.s
+.PHONY : src/Where.cpp.s
 
 src/core/Data.obj: src/core/Data.cpp.obj
 .PHONY : src/core/Data.obj
@@ -395,9 +443,15 @@ help:
 	@echo ... src/Insert.obj
 	@echo ... src/Insert.i
 	@echo ... src/Insert.s
+	@echo ... src/Select.obj
+	@echo ... src/Select.i
+	@echo ... src/Select.s
 	@echo ... src/Table.obj
 	@echo ... src/Table.i
 	@echo ... src/Table.s
+	@echo ... src/Where.obj
+	@echo ... src/Where.i
+	@echo ... src/Where.s
 	@echo ... src/core/Data.obj
 	@echo ... src/core/Data.i
 	@echo ... src/core/Data.s

@@ -8,7 +8,7 @@
 #include "core/Parser.hpp"
 #include "DebugToolkit.hpp"
 
-#define DEBUG_SWITCH
+//#define DEBUG_SWITCH
 
  void Create::BootLoader(User* user) {
     int ope = Create::parseCreate(*this);

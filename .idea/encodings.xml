@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with BOM">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK" addBOMForNewFiles="with BOM">
     <file url="file://$PROJECT_DIR$/main.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/Create.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/Handler.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Select.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/core/Exception.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/core/Expression.h" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />

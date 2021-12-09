@@ -42,6 +42,7 @@ CMakeFiles/zDB.dir/src/Handler.cpp.obj
  D:/CLionProjects233/zDB/src/Index.h
  D:/CLionProjects233/zDB/src/Insert.h
  D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/Select.h
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/User.hpp
  D:/CLionProjects233/zDB/src/core/Data.h
@@ -68,12 +69,40 @@ CMakeFiles/zDB.dir/src/Insert.cpp.obj
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
  D:/CLionProjects233/zDB/src/core/Parser.hpp
+CMakeFiles/zDB.dir/src/Select.cpp.obj
+ D:/CLionProjects233/zDB/src/DebugToolkit.hpp
+ D:/CLionProjects233/zDB/src/Dictionary.h
+ D:/CLionProjects233/zDB/src/Index.h
+ D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/Select.cpp
+ D:/CLionProjects233/zDB/src/Select.h
+ D:/CLionProjects233/zDB/src/Table.h
+ D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/Where.h
+ D:/CLionProjects233/zDB/src/core/Data.h
+ D:/CLionProjects233/zDB/src/core/Exception.h
+ D:/CLionProjects233/zDB/src/core/Expression.h
+ D:/CLionProjects233/zDB/src/core/Parser.hpp
 CMakeFiles/zDB.dir/src/Table.cpp.obj
  D:/CLionProjects233/zDB/src/Table.cpp
  D:/CLionProjects233/zDB/src/Table.h
  D:/CLionProjects233/zDB/src/core/Data.h
  D:/CLionProjects233/zDB/src/core/Exception.h
  D:/CLionProjects233/zDB/src/core/Expression.h
+CMakeFiles/zDB.dir/src/Where.cpp.obj
+ D:/CLionProjects233/zDB/src/DebugToolkit.hpp
+ D:/CLionProjects233/zDB/src/Dictionary.h
+ D:/CLionProjects233/zDB/src/Index.h
+ D:/CLionProjects233/zDB/src/Operate.hpp
+ D:/CLionProjects233/zDB/src/Select.h
+ D:/CLionProjects233/zDB/src/Table.h
+ D:/CLionProjects233/zDB/src/User.hpp
+ D:/CLionProjects233/zDB/src/Where.cpp
+ D:/CLionProjects233/zDB/src/Where.h
+ D:/CLionProjects233/zDB/src/core/Data.h
+ D:/CLionProjects233/zDB/src/core/Exception.h
+ D:/CLionProjects233/zDB/src/core/Expression.h
+ D:/CLionProjects233/zDB/src/core/Parser.hpp
 CMakeFiles/zDB.dir/src/core/Data.cpp.obj
  D:/CLionProjects233/zDB/src/core/Data.cpp
  D:/CLionProjects233/zDB/src/core/Data.h

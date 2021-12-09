@@ -2,12 +2,12 @@
 // Created by NaturalVStudio on 2021/12/6.
 //
 
-#define DEBUG_SWITCH
-
 #include "Insert.h"
 #include "DebugToolkit.hpp"
 #include "core/Parser.hpp"
 #include <utility>
+
+//#define DEBUG_SWITCH
 
 void Insert::BootLoader(User* user) {
     parseInsert(user, *this);

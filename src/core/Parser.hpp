@@ -98,6 +98,15 @@ public:
         return tmp;
     }
 
+    static std::string deleteHTChar(const std::string& s, char ch){
+        std::string tmp;
+        for (int i = 0; i < s.size(); ++i) {
+            if ((i == s.size() - 1 || i == 0) && s[i] == ch) continue;
+            tmp += s[i];
+        }
+        return tmp;
+    }
+
     static std::string regexDelete(const std::string& s, const std::string& regex){
         std::regex P(regex);
         return std::regex_replace(s, P, "");
