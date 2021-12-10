@@ -17,6 +17,7 @@ public:
     void BootLoader(User*) override;
     static int parseCreate(Create& create);
     static Table* parseCreateTable(User*, Create& create);
+    static std::string parseCreateView(User*, Create& create);
     static Index* parseCreateIndex(User*, Create& create);
 
 public:

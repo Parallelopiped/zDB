@@ -161,3 +161,26 @@ Index *Create::parseCreateIndex(User* user, Create& create) {
     return index;
 }
 
+std::string Create::parseCreateView(User * user, Create &create) {
+    std::regex tableP(R"(\((.+,?*)\))");
+#ifdef DEBUG_SWITCH
+    //std::cout << regex_match(create.account, tableP) << std::endl;//true
+#endif
+    std::smatch m;
+    regex_search(create.account, m, tableP);
+#ifdef DEBUG_SWITCH
+    DebugToolkit::RegexSearchOutput(m);
+#endif
+    std::vector<std::string> subAccount;
+    subAccount = Parser::regexSplit(m.str(1), ",\\s+");
+    for (const auto& expression : subAccount) {
+        //std::cout << subAccount[i] << std::endl;
+        std::regex name_type(R"((\w+)\s(\S+))");
+        std::smatch m_name_type;
+        regex_search(expression, m_name_type, name_type);
+#ifdef DEBUG_SWITCH
+        DebugToolkit::RegexSearchOutput(m_name_type);
+#endif
+    return std::string();
+}
+
